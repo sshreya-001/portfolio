@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Shreya Singh — Software Engineer at Ascendion. Specializing in Frontend Engineering, React, Angular, TypeScript, Node.js, and Enterprise UI development.">
+  <meta name="keywords" content="Shreya Singh, Software Engineer, Frontend Developer, React, Angular, TypeScript, Ascendion, VIT Bhopal, Web Development">
+  <meta name="author" content="Shreya Singh">
+  
+  <!-- Open Graph / Social Media Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shreya Singh | Software & Frontend Engineer">
+  <meta property="og:description" content="Software Engineer at Ascendion specializing in React, Angular, and enterprise web engineering. Explore experience, technical skills, and featured projects.">
+  <meta property="og:url" content="https://github.com/sshreya-001">
+  
+  <title>Shreya Singh | Software Engineer</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230f172a'/><path d='M30 65 C30 52 48 52 48 42 C48 34 38 34 32 38' stroke='%2338bdf8' stroke-width='8' fill='none' stroke-linecap='round'/><path d='M68 65 C68 52 50 52 50 42 C50 34 60 34 66 38' stroke='%23818cf8' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Shreya Singh Portfolio Home">
+        <span class="logo-mark">SS</span>
+        <span class="logo-text">Shreya Singh<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon theme-toggle" aria-label="Toggle visual theme" title="Toggle Light / Dark mode (T)">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Direct Resume Download Button -->
+        <a href="Shreya_Singh_Resume.pdf" download="Shreya_Singh_Resume.pdf" class="btn btn-outline btn-sm nav-resume-btn" id="header-resume-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="btn-icon mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-glow" aria-hidden="true"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Status Badge -->
+          <div class="hero-badge-wrapper">
+            <span class="status-badge">
+              <span class="status-indicator"></span>
+              Software Engineer at Ascendion
+            </span>
+            <span class="badge-sub">Hyderabad, India</span>
+          </div>
+
+          <!-- Main Title & Role -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-highlight">Shreya Singh</span>.
+            <span class="hero-subtitle-line">Full-Stack Software Engineer</span>
+          </h1>
+
+          <!-- Value Statement strictly from resume & user profile -->
+          <p class="hero-description">
+            Developing and maintaining dynamic full-stack web applications using <strong>Angular</strong>, <strong>React.js</strong>, and the <strong>MERN stack</strong>. Currently engineering enterprise client solutions and AI workflow platforms at Ascendion.
+          </p>
+
+          <!-- Core Call to Actions -->
+          <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary">
+              <span>View Experience</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="Shreya_Singh_Resume.pdf" download="Shreya_Singh_Resume.pdf" class="btn btn-secondary" id="hero-download-resume">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon-svg">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+
+          <!-- Verified Contact & Social Badges -->
+          <div class="hero-quick-links">
+            <a href="mailto:sshreya3095@gmail.com" class="quick-chip" title="Send email to sshreya3095@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>sshreya3095@gmail.com</span>
+            </a>
+
+            <button class="quick-chip copy-btn" id="copy-email-btn" data-email="sshreya3095@gmail.com" title="Copy email address to clipboard">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span class="copy-text">Copy</span>
+            </button>
+
+            <a href="https://www.linkedin.com/in/shreyasingh001/" target="_blank" rel="noopener noreferrer" class="quick-chip" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66 1.66 1.66 0 0 0-1.66-1.66Z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/sshreya-001" target="_blank" rel="noopener noreferrer" class="quick-chip" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- RECRUITER 10-SECOND QUICK-SCAN HUD -->
+        <div class="hero-recruiter-card" id="recruiter-card">
+          <div class="recruiter-card-header">
+            <div class="recruiter-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hud-icon">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Recruiter Quick-Scan
+            </div>
+            <span class="hud-time">10s Overview</span>
+          </div>
+
+          <div class="recruiter-grid">
+            <div class="recruiter-item">
+              <span class="item-label">Current Role</span>
+              <span class="item-value highlight">Software Engineer</span>
+              <span class="item-sub">Ascendion Engineering (July 2025 – Present)</span>
+            </div>
+
+            <div class="recruiter-item">
+              <span class="item-label">Specialization</span>
+              <span class="item-value">Full-Stack Web Development</span>
+              <span class="item-sub">Angular, React.js, Node.js & MERN Stack</span>
+            </div>
+
+            <div class="recruiter-item">
+              <span class="item-label">Core Tech Stack</span>
+              <div class="mini-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">React Native</span>
+              </div>
+            </div>
+
+            <div class="recruiter-item">
+              <span class="item-label">Education</span>
+              <span class="item-value">B.E. in Computer Science</span>
+              <span class="item-sub">VIT Bhopal University (CGPA: 8.26 / 10)</span>
+            </div>
+          </div>
+
+          <div class="recruiter-card-footer">
+            <div class="recruiter-stats">
+              <div class="stat-box">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">End-to-End Projects</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">National Hackathons</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Industry Certifications</span>
+              </div>
+            </div>
+            <a href="Shreya_Singh_Resume.pdf" download="Shreya_Singh_Resume.pdf" class="btn btn-outline btn-full btn-sm">
+              View Verified PDF Resume
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Full-Stack Software Engineer</h2>
+          <p class="section-subtitle">
+            Building scalable web, mobile, and enterprise applications across frontend and backend systems.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Narrative: Skills, Works Done, & Current Company Work -->
+          <div class="about-narrative">
+            <p class="narrative-lead">
+              I’m a <strong>Full-Stack Software Engineer at Ascendion</strong>, with hands-on experience building <strong>scalable web, mobile, and enterprise applications</strong> across the frontend and backend. My core expertise spans <strong>Angular, React.js, and the MERN stack (MongoDB, Express.js, React, Node.js)</strong>, complemented by <strong>JavaScript, TypeScript, and C++</strong>.
+            </p>
+            <p>
+              I enjoy working across the complete software development lifecycle—from <strong>designing responsive user interfaces</strong> to building <strong>RESTful APIs, integrating backend services, managing databases, and delivering production-ready applications</strong>. I focus on writing clean, maintainable code and building solutions that are both technically robust and intuitive for users.
+            </p>
+            <p>
+              At <strong>Ascendion</strong>, I contribute to <strong>AAVA</strong>, an AI workflow automation platform, where I develop core interfaces and workflows that enable users to create <strong>AI agents and configure automated execution pipelines</strong>. I also own the frontend development of <strong>AAVA Data Studios</strong> using Angular with rigorous unit testing, CI/CD pipeline troubleshooting, and Checkmarx security remediation. Additionally, I work on enterprise applications for <strong>HP</strong>, developing Angular-based solutions and integrating frontend systems with <strong>backend microservices and REST APIs</strong> while collaborating with cross-functional engineering teams.
+            </p>
+            <p>
+              Beyond my professional work, I’ve built end-to-end applications including <strong>AI Story Enhancer</strong>, an AI-powered platform using React, Node.js/Express, REST APIs, and prompt-orchestration workflows; <strong>Songify</strong>, a cross-platform music streaming application built with React Native and Expo; and <strong>Savrajya</strong>, a full-stack MERN publishing platform.
+            </p>
+            <p>
+              I’m driven by a simple goal: <strong>turn complex requirements into clean, scalable, and meaningful software experiences</strong>—while continuously learning, experimenting with new technologies, and growing as a full-stack engineer.
+            </p>
+
+            <div class="about-meta-row">
+              <div class="meta-item">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Hyderabad, India</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Current Company</span>
+                <span class="meta-value">Ascendion Engineering Pvt. Ltd</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Core Expertise</span>
+                <span class="meta-value">Full-Stack (Angular · React · MERN)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Scannable Engineering Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Full-Stack Development</h3>
+                <p class="pillar-desc">
+                  Building complete, end-to-end web applications with <strong>React.js, Angular, Node.js, and Express.js</strong> backed by scalable architectures.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">AI Platforms & Workflows</h3>
+                <p class="pillar-desc">
+                  Developing interactive interfaces and workflows for AI platforms (AAVA) that empower users to configure AI agents, automate workflows, and interact with AI APIs.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Databases & RESTful APIs</h3>
+                <p class="pillar-desc">
+                  Designing RESTful APIs with <strong>Node.js & Express.js</strong>, working with <strong>MongoDB & SQL</strong>, and optimizing server performance.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Mobile & Cross-Platform</h3>
+                <p class="pillar-desc">
+                  Engineering mobile streaming applications with <strong>React Native & Expo</strong>, managing audio playback engines and persistent client state.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Work History</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">
+            Industry experience in enterprise frontend development, platform engineering, and client solutions.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Ascendion Main Company Card -->
+          <div class="company-card">
+            <div class="company-card-header">
+              <div class="company-info">
+                <div class="company-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="company-title">ASCENDION ENGINEERING PVT. LTD</h3>
+                  <div class="company-role">Software Engineer</div>
+                </div>
+              </div>
+              <div class="company-timeline-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>July 2025 – Present (Current)</span>
+              </div>
+            </div>
+
+            <p class="company-overview">
+              Developing and maintaining dynamic web applications using the <strong>MERN stack</strong> and <strong>Angular</strong>. Key responsibilities include designing scalable architectures, implementing RESTful APIs, developing responsive and accessible user interfaces, and optimizing application performance to meet business and client requirements.
+            </p>
+
+            <!-- Projects Under Ascendion -->
+            <div class="projects-subgrid">
+              
+              <!-- Sub-Project 1: AAVA -->
+              <div class="sub-project-card">
+                <div class="sub-project-header">
+                  <div class="sub-project-meta">
+                    <span class="sub-project-type">Internal Platform Project</span>
+                    <h4 class="sub-project-name">AAVA — AI Workflow Platform</h4>
+                    <span class="sub-project-role">Role: Frontend Developer</span>
+                  </div>
+                  <div class="sub-project-tags">
+                    <span class="mini-tag">React.js</span>
+                    <span class="mini-tag">TypeScript</span>
+                    <span class="mini-tag">AI Workflows</span>
+                    <span class="mini-tag">Platform UI</span>
+                  </div>
+                </div>
+
+                <div class="sub-project-body">
+                  <ul class="resume-bullet-list">
+                    <li>
+                      <strong>AI Agent & Automation Interface:</strong> Developed and maintained dynamic user interfaces for AAVA, an AI platform that enables users to create AI agents and workflow automations.
+                    </li>
+                    <li>
+                      <strong>Modular & Accessible Architecture:</strong> Built modular, responsive, and accessible frontend components to ensure a seamless, consistent user experience across the entire platform.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Sub-Project 2: AAVA Data Studios -->
+              <div class="sub-project-card">
+                <div class="sub-project-header">
+                  <div class="sub-project-meta">
+                    <span class="sub-project-type">Internal Platform Project</span>
+                    <h4 class="sub-project-name">AAVA — Data Studios</h4>
+                    <span class="sub-project-role">Role: Frontend Developer</span>
+                  </div>
+                  <div class="sub-project-tags">
+                    <span class="mini-tag">Angular</span>
+                    <span class="mini-tag">Data-Driven Workflows</span>
+                    <span class="mini-tag">Unit Testing</span>
+                    <span class="mini-tag">CI/CD Pipelines</span>
+                    <span class="mini-tag">Checkmarx Security</span>
+                  </div>
+                </div>
+
+                <div class="sub-project-body">
+                  <ul class="resume-bullet-list">
+                    <li>
+                      <strong>End-to-End Module Ownership:</strong> Owned the end-to-end frontend development of Data Studios using <strong>Angular</strong>, an AAVA module supporting data-driven workflows and user interactions.
+                    </li>
+                    <li>
+                      <strong>Responsive & Intuitive Interface:</strong> Developed and maintained the complete frontend interface, delivering responsive, intuitive, and reliable user experiences across the platform.
+                    </li>
+                    <li>
+                      <strong>Unit Testing & Reliability:</strong> Implemented and maintained unit testing across the Data Studios frontend and backend, ensuring functional correctness, code reliability, and stable feature delivery.
+                    </li>
+                    <li>
+                      <strong>CI/CD & Security Hardening:</strong> Investigated and resolved CI/CD pipeline issues, improving build reliability, and remediated <strong>Checkmarx security vulnerabilities</strong> for secure production delivery.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Sub-Project 3: Client Project HP -->
+              <div class="sub-project-card client-project">
+                <div class="sub-project-header">
+                  <div class="sub-project-meta">
+                    <span class="sub-project-type client-type">Enterprise Client Project</span>
+                    <h4 class="sub-project-name">HP — Enterprise Applications</h4>
+                    <span class="sub-project-role">Role: Frontend Developer</span>
+                  </div>
+                  <div class="sub-project-tags">
+                    <span class="mini-tag">Angular</span>
+                    <span class="mini-tag">TypeScript</span>
+                    <span class="mini-tag">Enterprise UI</span>
+                    <span class="mini-tag">REST Services</span>
+                  </div>
+                </div>
+
+                <div class="sub-project-body">
+                  <ul class="resume-bullet-list">
+                    <li>
+                      <strong>Enterprise Interface Engineering:</strong> Developing responsive and user-centric interfaces for enterprise applications using <strong>Angular</strong>.
+                    </li>
+                    <li>
+                      <strong>Backend Integration:</strong> Engineering enterprise application interfaces and integrating UI directly with backend services and REST APIs.
+                    </li>
+                    <li>
+                      <strong>Cross-Functional Collaboration:</strong> Collaborating closely with cross-functional teams, including UI/UX designers, backend engineers, and stakeholders, to deliver scalable, high-performance web applications.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Core Skills & Technologies</h2>
+          <p class="section-subtitle">
+            Technologies and tools backed directly by professional experience and real-world project implementations.
+          </p>
+        </div>
+
+        <div class="skills-category-grid">
+          
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">ES6+</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-level">Typed Systems</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">C++</span>
+                <span class="skill-level">Core CS</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">HTML5 / CSS3</span>
+                <span class="skill-level">Semantic & Modern</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Relational Data</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend & Mobile Frameworks -->
+          <div class="skill-category-card highlight-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Frontend & Mobile</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">React.js</span>
+                <span class="skill-level">Component Architecture</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Angular.js</span>
+                <span class="skill-level">Enterprise UI</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">React Native</span>
+                <span class="skill-level">Cross-Platform</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Flutter</span>
+                <span class="skill-level">Mobile Framework</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Expo & Expo AV</span>
+                <span class="skill-level">Audio & Navigation</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Context API</span>
+                <span class="skill-level">State Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend & Architecture -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Backend & APIs</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level">Runtime</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Express.js</span>
+                <span class="skill-level">API Framework</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">RESTful APIs</span>
+                <span class="skill-level">Integration & Design</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">PHP (MySQL)</span>
+                <span class="skill-level">Backend Services</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Developer Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Databases & Tools</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-level">NoSQL Database</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-level">Version Control</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">VS Code</span>
+                <span class="skill-level">Development Env</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">AsyncStorage</span>
+                <span class="skill-level">Local Persistence</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Verified Certifications Sub-Section -->
+        <div class="certifications-banner">
+          <div class="cert-banner-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <div>
+              <h3 class="cert-title">Verified Certifications</h3>
+              <p class="cert-subtitle">Formal technical certifications accredited on resume</p>
+            </div>
+          </div>
+
+          <div class="cert-grid">
+            <div class="cert-badge-card">
+              <div class="cert-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 16V9h14V2"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="18" r="3"></circle>
+                </svg>
+              </div>
+              <div class="cert-info">
+                <span class="cert-name">MERN Full Stack Internship Program</span>
+                <span class="cert-desc">Full stack application development with MongoDB, Express.js, React.js, and Node.js</span>
+              </div>
+            </div>
+
+            <div class="cert-badge-card">
+              <div class="cert-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="cert-info">
+                <span class="cert-name">Android App Development</span>
+                <span class="cert-desc">Mobile application architecture, mobile UI components, and lifecycle management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineering Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Engineered applications showcasing real-world frontend craft, mobile development, and full-stack API integration.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (4)</button>
+          <button class="filter-btn" data-filter="ai-web" role="tab" aria-selected="false">AI & Web</button>
+          <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile Application</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: AI Story Enhancer -->
+          <article class="project-card" data-category="ai-web" id="project-story-enhancer">
+            <div class="project-preview-pane">
+              <div class="preview-header">
+                <div class="window-controls">
+                  <span class="control-dot red"></span>
+                  <span class="control-dot yellow"></span>
+                  <span class="control-dot green"></span>
+                </div>
+                <a href="https://story-scene.vercel.app/" target="_blank" rel="noopener noreferrer" class="preview-title preview-link-active" title="Open live deployment: story-scene.vercel.app">
+                  story-scene.vercel.app ↗
+                </a>
+                <span class="preview-badge live-status-badge">● Deployed Live</span>
+              </div>
+
+              <div class="preview-mockup">
+                <!-- Architectural Visual Illustration -->
+                <div class="mockup-diagram">
+                  <div class="diagram-step">
+                    <span class="step-label">User Input</span>
+                    <span class="step-sub">Genre & Tone selection</span>
+                  </div>
+                  <div class="diagram-arrow">➔</div>
+                  <div class="diagram-step highlight-step">
+                    <span class="step-label">Node/Express API</span>
+                    <span class="step-sub">REST Payload Engine</span>
+                  </div>
+                  <div class="diagram-arrow">➔</div>
+                  <div class="diagram-step">
+                    <span class="step-label">AI Generation</span>
+                    <span class="step-sub">Creative Enhancement</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-category">AI-Powered Web Application</span>
+                <span class="project-date">February 2026</span>
+              </div>
+
+              <h3 class="project-heading">AI Story Enhancer</h3>
+
+              <p class="project-summary">
+                An AI-powered web application that enhances user-written stories by refining tone, structure, and creativity based on selected genre and language preferences.
+              </p>
+
+              <div class="project-contribution">
+                <span class="contribution-heading">Engineering Highlights:</span>
+                <ul class="contribution-list">
+                  <li>Built a responsive, intuitive frontend using <strong>React.js</strong> for live editing and parameter configuration.</li>
+                  <li>Integrated RESTful APIs using <strong>Node.js and Express.js</strong> to process user story inputs and pipe structured prompts to AI APIs.</li>
+                  <li>Ensured smooth deployment on Vercel with robust environment configuration and error-handling pipelines.</li>
+                </ul>
+              </div>
+
+              <div class="tech-tag-group">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">AI Integration</span>
+                <span class="tech-tag">Vercel Deployment</span>
+              </div>
+
+              <div class="project-footer-links">
+                <div class="footer-btn-group">
+                  <a href="https://story-scene.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-svg">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <button class="btn btn-outline btn-sm view-details-btn" data-project="story-enhancer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>Technical Overview</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Songify -->
+          <article class="project-card" data-category="mobile" id="project-songify">
+            <div class="project-preview-pane mobile-preview-pane">
+              <div class="preview-header">
+                <div class="window-controls">
+                  <span class="control-dot red"></span>
+                  <span class="control-dot yellow"></span>
+                  <span class="control-dot green"></span>
+                </div>
+                <span class="preview-title">Songify iOS / Android</span>
+                <span class="preview-badge">React Native + Expo</span>
+              </div>
+
+              <div class="preview-mockup">
+                <!-- Mobile Mockup Visualization -->
+                <div class="mobile-player-mockup">
+                  <div class="player-top-bar">
+                    <span class="app-title-text">Now Playing</span>
+                    <span class="stream-badge">Expo AV Engine</span>
+                  </div>
+                  <div class="player-waveform">
+                    <span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span>
+                    <span class="bar b4"></span><span class="bar b5"></span><span class="bar b6"></span>
+                    <span class="bar b7"></span><span class="bar b8"></span>
+                  </div>
+                  <div class="player-controls-row">
+                    <span class="control-btn">🔀 Shuffle</span>
+                    <span class="control-btn active">▶ Play/Pause</span>
+                    <span class="control-btn">🔁 Repeat</span>
+                    <span class="control-btn">❤️ Liked (AsyncStorage)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-category">Mobile Streaming Application</span>
+                <span class="project-date">January 2026</span>
+              </div>
+
+              <h3 class="project-heading">Songify — Music Streaming Mobile App</h3>
+
+              <p class="project-summary">
+                A cross-platform mobile music streaming application supporting audio playback controls, persistent favorites management, and high-performance state handling.
+              </p>
+
+              <div class="project-contribution">
+                <span class="contribution-heading">Engineering Highlights:</span>
+                <ul class="contribution-list">
+                  <li>Built cross-platform audio streaming using <strong>React Native</strong> and <strong>Expo</strong> with complete play/pause, seek, shuffle, repeat, and volume controls via <strong>Expo AV</strong>.</li>
+                  <li>Implemented favorites management using <strong>React Context API</strong> and <strong>AsyncStorage</strong> for persistent liked tracks organized into a Favorites album.</li>
+                  <li>Designed modular navigation with <strong>Expo Router</strong> and managed reactive playback state using React Hooks for high-FPS UI updates.</li>
+                </ul>
+              </div>
+
+              <div class="tech-tag-group">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Context API</span>
+                <span class="tech-tag">AsyncStorage</span>
+                <span class="tech-tag">Expo AV</span>
+                <span class="tech-tag">Expo Router</span>
+              </div>
+
+              <div class="project-footer-links">
+                <button class="btn btn-outline btn-sm view-details-btn" data-project="songify">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Technical Overview</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Savrajya -->
+          <article class="project-card" data-category="fullstack" id="project-savrajya">
+            <div class="project-preview-pane">
+              <div class="preview-header">
+                <div class="window-controls">
+                  <span class="control-dot red"></span>
+                  <span class="control-dot yellow"></span>
+                  <span class="control-dot green"></span>
+                </div>
+                <span class="preview-title">savrajya-platform.org</span>
+                <span class="preview-badge">MERN Stack</span>
+              </div>
+
+              <div class="preview-mockup">
+                <!-- Publishing Architecture Diagram -->
+                <div class="mockup-diagram">
+                  <div class="diagram-step">
+                    <span class="step-label">Story & Chapter CMS</span>
+                    <span class="step-sub">Authoring Workflows</span>
+                  </div>
+                  <div class="diagram-arrow">➔</div>
+                  <div class="diagram-step highlight-step">
+                    <span class="step-label">Node/Express Server</span>
+                    <span class="step-sub">CRUD & Validation</span>
+                  </div>
+                  <div class="diagram-arrow">➔</div>
+                  <div class="diagram-step">
+                    <span class="step-label">MongoDB</span>
+                    <span class="step-sub">Reviews & Chapters</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-category">Full-Stack Publishing Platform</span>
+                <span class="project-date">November 2024</span>
+              </div>
+
+              <h3 class="project-heading">Savrajya</h3>
+
+              <p class="project-summary">
+                A feature-rich digital publishing platform enabling authors to create, publish, and manage multi-chapter stories and blogs while driving reader engagement.
+              </p>
+
+              <div class="project-contribution">
+                <span class="contribution-heading">Engineering Highlights:</span>
+                <ul class="contribution-list">
+                  <li>Designed and implemented chapter-wise publishing and content management workflows to enhance user engagement.</li>
+                  <li>Engineered a robust reader commenting and review feedback system to foster active community discussion.</li>
+                  <li>Optimized backend queries with <strong>MongoDB and Express</strong> for scalability, quick response times, and high reliability.</li>
+                </ul>
+              </div>
+
+              <div class="tech-tag-group">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MERN Architecture</span>
+              </div>
+
+              <div class="project-footer-links">
+                <button class="btn btn-outline btn-sm view-details-btn" data-project="savrajya">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  <span>Technical Overview</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Chhanv Well-Fare -->
+          <article class="project-card" data-category="fullstack" id="project-chhanv">
+            <div class="project-preview-pane">
+              <div class="preview-header">
+                <div class="window-controls">
+                  <span class="control-dot red"></span>
+                  <span class="control-dot yellow"></span>
+                  <span class="control-dot green"></span>
+                </div>
+                <a href="https://channv-help.vercel.app/" target="_blank" rel="noopener noreferrer" class="preview-title preview-link-active" title="Open live deployment: channv-help.vercel.app">
+                  channv-help.vercel.app ↗
+                </a>
+                <span class="preview-badge live-status-badge">● Deployed Live</span>
+              </div>
+
+              <div class="preview-mockup">
+                <div class="mockup-diagram">
+                  <div class="diagram-step">
+                    <span class="step-label">Donation Portal</span>
+                    <span class="step-sub">Direct QR Integration</span>
+                  </div>
+                  <div class="diagram-arrow">➔</div>
+                  <div class="diagram-step highlight-step">
+                    <span class="step-label">Drive Manager</span>
+                    <span class="step-sub">Volunteer Coordination</span>
+                  </div>
+                  <div class="diagram-arrow">➔</div>
+                  <div class="diagram-step">
+                    <span class="step-label">MySQL DB</span>
+                    <span class="step-sub">Impact & Records</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-category">Donation & Volunteering Portal</span>
+                <span class="project-date">November 2022</span>
+              </div>
+
+              <h3 class="project-heading">Chhanv Well-Fare</h3>
+
+              <p class="project-summary">
+                A community-centered web platform designed to streamline donations and volunteering for orphans, elderly citizens, and vulnerable groups.
+              </p>
+
+              <div class="project-contribution">
+                <span class="contribution-heading">Engineering Highlights:</span>
+                <ul class="contribution-list">
+                  <li>Designed an accessible, user-friendly interface to lower barriers for charitable contributions and volunteer onboarding.</li>
+                  <li>Integrated digital QR codes for seamless donation processing and organized community drive management.</li>
+                  <li>Significantly boosted contributions and overall user participation through streamlined flows.</li>
+                </ul>
+              </div>
+
+              <div class="tech-tag-group">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">QR Payment Integration</span>
+                <span class="tech-tag">Vercel Deployment</span>
+              </div>
+
+              <div class="project-footer-links">
+                <div class="footer-btn-group">
+                  <a href="https://channv-help.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-svg">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Live Demo</span>
+                  </a>
+                  <button class="btn btn-outline btn-sm view-details-btn" data-project="chhanv">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>Technical Overview</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HACKATHONS & LEADERSHIP SECTION -->
+    <section class="section hackathons-section" id="hackathons">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competitions & Extracurriculars</span>
+          <h2 class="section-title">Hackathons & Leadership</h2>
+          <p class="section-subtitle">
+            High-intensity technical problem-solving, national hackathon challenges, and leadership initiatives.
+          </p>
+        </div>
+
+        <div class="hackathons-grid">
+          
+          <!-- Smart India Hackathon -->
+          <div class="hackathon-card">
+            <div class="hackathon-year">2023</div>
+            <div class="hackathon-content">
+              <div class="hackathon-badge">National Hackathon</div>
+              <h3 class="hackathon-title">Smart India Hackathon (SIH 2023)</h3>
+              <p class="hackathon-desc">
+                Competed in the premier nationwide initiative to solve pressing challenges across digital governance and technical innovation under time constraints.
+              </p>
+            </div>
+          </div>
+
+          <!-- Google Girl Hackathon -->
+          <div class="hackathon-card featured-hackathon">
+            <div class="hackathon-year">2024</div>
+            <div class="hackathon-content">
+              <div class="hackathon-badge google-badge">Competitive Engineering</div>
+              <h3 class="hackathon-title">Google Girl Hackathon (2024)</h3>
+              <p class="hackathon-desc">
+                Participated in Google's flagship technical program designed to challenge women engineering students across algorithmic problem-solving and software design.
+              </p>
+            </div>
+          </div>
+
+          <!-- AMEX Hackathon -->
+          <div class="hackathon-card">
+            <div class="hackathon-year">2024</div>
+            <div class="hackathon-content">
+              <div class="hackathon-badge amex-badge">Industry Challenge</div>
+              <h3 class="hackathon-title">AMEX Hackathon (2024)</h3>
+              <p class="hackathon-desc">
+                Engineered innovative technical solutions in American Express's competitive hackathon focused on financial technology and scalable architectures.
+              </p>
+            </div>
+          </div>
+
+          <!-- College Hackathon Finalist -->
+          <div class="hackathon-card">
+            <div class="hackathon-year">Finalist</div>
+            <div class="hackathon-content">
+              <div class="hackathon-badge finalist-badge">Honor</div>
+              <h3 class="hackathon-title">College Hackathon Finalist</h3>
+              <p class="hackathon-desc">
+                Recognized as a finalist in competitive university hackathon rounds through rigorous prototyping and defense in front of technical judges.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Leadership & Personal Interests Grid -->
+        <div class="leadership-interests-grid">
+          <!-- Leadership Card -->
+          <div class="extra-detail-card">
+            <div class="extra-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="extra-title">Leadership & Strategy</h4>
+              <p class="extra-text">
+                Led <strong>content strategy and digital campaigns</strong> for technical and social-impact events, coordinating outreach and team messaging.
+              </p>
+            </div>
+          </div>
+
+          <!-- Creative Pursuits Card -->
+          <div class="extra-detail-card">
+            <div class="extra-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <div>
+              <h4 class="extra-title">Creative Balance & Hobbies</h4>
+              <p class="extra-text">
+                Active in <strong>Literature Writing</strong>, <strong>Crochet</strong>, and <strong>Roller Skating</strong> — fostering creative discipline and attention to detail.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Foundation</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Computer science degree grounded in strong fundamentals, algorithms, and systems.
+          </p>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-card-left">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="edu-degree">Bachelors of Engineering in Computer Science</span>
+              <h3 class="edu-institution">VIT Bhopal University</h3>
+              <span class="edu-location">Bhopal, Madhya Pradesh</span>
+            </div>
+          </div>
+
+          <div class="edu-card-right">
+            <div class="edu-dates-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>September 2021 – July 2025</span>
+            </div>
+            <div class="edu-cgpa-badge">
+              <span class="cgpa-label">Cumulative GPA</span>
+              <span class="cgpa-value">8.26 / 10</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & RECRUITER CTA SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="contact-headline">Let's build something impactful.</h2>
+            <p class="contact-subtext">
+              I am currently open to exciting opportunities in Software Engineering, Frontend Development, and Enterprise Web Applications. Feel free to connect directly.
+            </p>
+          </div>
+
+          <div class="contact-channels-grid">
+            
+            <!-- Email Box -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <span class="channel-label">Email Address</span>
+              <a href="mailto:sshreya3095@gmail.com" class="channel-link">sshreya3095@gmail.com</a>
+              <button class="btn btn-ghost btn-sm channel-btn" id="copy-email-contact" data-email="sshreya3095@gmail.com">
+                Copy Email
+              </button>
+            </div>
+
+            <!-- Phone Box -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <span class="channel-label">Phone</span>
+              <a href="tel:9650791536" class="channel-link">+91 9650791536</a>
+              <span class="channel-sub">Hyderabad, India</span>
+            </div>
+
+            <!-- LinkedIn Box -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.66 1.66 0 0 0-1.66 1.66 1.66 1.66 0 0 0 1.66 1.66 1.66 1.66 0 0 0 1.66-1.66 1.66 1.66 0 0 0-1.66-1.66Z"/>
+                </svg>
+              </div>
+              <span class="channel-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/shreyasingh001/" target="_blank" rel="noopener noreferrer" class="channel-link">
+                linkedin.com/in/shreyasingh001
+              </a>
+              <a href="https://www.linkedin.com/in/shreyasingh001/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm channel-btn">
+                Connect on LinkedIn
+              </a>
+            </div>
+
+            <!-- GitHub Box -->
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </div>
+              <span class="channel-label">GitHub</span>
+              <a href="https://github.com/sshreya-001" target="_blank" rel="noopener noreferrer" class="channel-link">
+                github.com/sshreya-001
+              </a>
+              <a href="https://github.com/sshreya-001" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm channel-btn">
+                View Repositories
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Professional Message Direct Form -->
+          <div class="contact-form-wrapper">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. Jane Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-sender-email">Your Work Email</label>
+                  <input type="email" id="contact-sender-email" name="email" placeholder="e.g. jane@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Opportunity / Project Collaboration / Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Hello Shreya, I came across your portfolio and would like to connect regarding..." required></textarea>
+              </div>
+
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary" id="send-msg-btn">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-svg">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+                <span class="form-fallback-hint">Opens directly in your mail client if preferred.</span>
+              </div>
+            </form>
+          </div>
+
+          <!-- Bottom Resume Download Banner -->
+          <div class="contact-resume-banner">
+            <div class="banner-text">
+              <span class="banner-title">Need a formatted copy of my resume for your records?</span>
+              <span class="banner-sub">Download the official PDF version with verified credentials.</span>
+            </div>
+            <a href="Shreya_Singh_Resume.pdf" download="Shreya_Singh_Resume.pdf" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-svg">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Shreya_Singh_Resume.pdf</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Shreya Singh</span>
+        <span class="footer-desc">Software Engineer · React · Angular · Node.js</span>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#hackathons">Hackathons</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+
+    </div>
+  </footer>
+
+  <!-- TECHNICAL PROJECT DEEP-DIVE MODAL -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close project modal">&times;</button>
+      <div class="modal-body" id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
