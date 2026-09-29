@@ -97,11 +97,32 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Sleek Scrollbar for Windows Desktop */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-medium);
 }
 
 html {
   scroll-behavior: smooth;
   text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-elevated) var(--bg-primary);
 }
 
 body {
@@ -112,8 +133,12 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
   transition: background-color var(--transition-normal), color var(--transition-normal);
   overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 /* Accessible focus ring */
@@ -2285,6 +2310,136 @@ ul {
 
   .about-meta-row {
     grid-template-columns: 1fr;
+  }
+
+  /* Prevent iOS Safari from zooming on input focus */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Mobile Small Devices (Android, iPhone SE / 13 / 14 / 15 / 16) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+
+  .hero-subtitle-line {
+    font-size: clamp(16px, 4.5vw, 20px);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-quick-links {
+    gap: 8px;
+  }
+
+  .quick-chip {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .recruiter-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hackathons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-preview-pane {
+    padding: 16px 14px;
+  }
+
+  .preview-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .mockup-diagram {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .diagram-arrow {
+    transform: rotate(90deg);
+    margin: 2px 0;
+  }
+
+  .project-details {
+    padding: 22px 18px;
+  }
+
+  .project-filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .project-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .contact-card {
+    padding: 24px 16px;
+  }
+
+  .contact-resume-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .contact-resume-banner .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modal-card {
+    width: 95%;
+    max-height: 90vh;
+    padding: 24px 16px;
+  }
+
+  .modal-close-btn {
+    top: 14px;
+    right: 14px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-nav {
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
   }
 }
 
