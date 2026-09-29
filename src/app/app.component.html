@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0f17">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8fafc">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="color-scheme" content="dark light">
-  <meta name="description" content="Portfolio of Shreya Singh — Software Engineer at Ascendion. Specializing in Frontend Engineering, React, Angular, TypeScript, Node.js, and Enterprise UI development.">
-  <meta name="keywords" content="Shreya Singh, Software Engineer, Frontend Developer, React, Angular, TypeScript, Ascendion, VIT Bhopal, Web Development">
-  <meta name="author" content="Shreya Singh">
-  
-  <!-- Open Graph / Social Media Metadata -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Shreya Singh | Software & Frontend Engineer">
-  <meta property="og:description" content="Software Engineer at Ascendion specializing in React, Angular, and enterprise web engineering. Explore experience, technical skills, and featured projects.">
-  <meta property="og:url" content="https://github.com/sshreya-001">
-  
-  <title>Shreya Singh | Software Engineer</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230f172a'/><path d='M30 65 C30 52 48 52 48 42 C48 34 38 34 32 38' stroke='%2338bdf8' stroke-width='8' fill='none' stroke-linecap='round'/><path d='M68 65 C68 52 50 52 50 42 C50 34 60 34 66 38' stroke='%23818cf8' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
-
-  <!-- Google Fonts: Plus Jakarta Sans & Inter & JetBrains Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header / Navigation -->
+<!-- Header / Navigation -->
   <header class="site-header" id="site-header">
     <div class="nav-container">
       <a href="#hero" class="brand-logo" aria-label="Shreya Singh Portfolio Home">
@@ -39,21 +6,21 @@
         <span class="logo-text">Shreya Singh<span class="logo-dot">.</span></span>
       </a>
 
-      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+      <nav class="nav-menu" [class.open]="mobileMenuOpen" id="nav-menu" aria-label="Main Navigation">
         <ul class="nav-list">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#about" class="nav-link" (click)="closeMobileMenu()">About</a></li>
+          <li><a href="#experience" class="nav-link" (click)="closeMobileMenu()">Experience</a></li>
+          <li><a href="#skills" class="nav-link" (click)="closeMobileMenu()">Skills</a></li>
+          <li><a href="#projects" class="nav-link" (click)="closeMobileMenu()">Projects</a></li>
+          <li><a href="#hackathons" class="nav-link" (click)="closeMobileMenu()">Hackathons</a></li>
+          <li><a href="#education" class="nav-link" (click)="closeMobileMenu()">Education</a></li>
+          <li><a href="#contact" class="nav-link" (click)="closeMobileMenu()">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <!-- Theme Toggle -->
-        <button id="theme-toggle" class="btn-icon theme-toggle" aria-label="Toggle visual theme" title="Toggle Light / Dark mode (T)">
+        <button id="theme-toggle" (click)="toggleTheme()" class="btn-icon theme-toggle" aria-label="Toggle visual theme" title="Toggle Light / Dark mode (T)">
           <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -81,7 +48,7 @@
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-toggle" class="btn-icon mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <button id="mobile-toggle" (click)="toggleMobileMenu()" class="btn-icon mobile-toggle" aria-label="Toggle navigation menu" [attr.aria-expanded]="mobileMenuOpen">
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
@@ -141,15 +108,15 @@
 
           <!-- Verified Contact & Social Badges -->
           <div class="hero-quick-links">
-            <a href="mailto:sshreya3095@gmail.com" class="quick-chip" title="Send email to sshreya3095@gmail.com">
+            <a href="mailto:sshreya3095&#64;gmail.com" class="quick-chip" title="Send email to sshreya3095&#64;gmail.com">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
-              <span>sshreya3095@gmail.com</span>
+              <span>sshreya3095&#64;gmail.com</span>
             </a>
 
-            <button class="quick-chip copy-btn" id="copy-email-btn" data-email="sshreya3095@gmail.com" title="Copy email address to clipboard">
+            <button class="quick-chip copy-btn" id="copy-email-btn" (click)="copyEmail('sshreya3095&#64;gmail.com')" title="Copy email address to clipboard">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -726,17 +693,17 @@
 
         <!-- Project Filter Buttons -->
         <div class="project-filters" role="tablist" aria-label="Project Categories">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (5)</button>
-          <button class="filter-btn" data-filter="ai-web" role="tab" aria-selected="false">AI & Web</button>
-          <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile Application</button>
-          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack</button>
+          <button class="filter-btn" [class.active]="activeFilter === 'all'" (click)="setFilter('all')" role="tab" [attr.aria-selected]="activeFilter === 'all'">All Projects (5)</button>
+          <button class="filter-btn" [class.active]="activeFilter === 'ai-web'" (click)="setFilter('ai-web')" role="tab" [attr.aria-selected]="activeFilter === 'ai-web'">AI & Web</button>
+          <button class="filter-btn" [class.active]="activeFilter === 'mobile'" (click)="setFilter('mobile')" role="tab" [attr.aria-selected]="activeFilter === 'mobile'">Mobile Application</button>
+          <button class="filter-btn" [class.active]="activeFilter === 'fullstack'" (click)="setFilter('fullstack')" role="tab" [attr.aria-selected]="activeFilter === 'fullstack'">Full-Stack</button>
         </div>
 
         <!-- Projects Grid -->
         <div class="projects-grid">
           
           <!-- PROJECT 1: Developer Portfolio Website -->
-          <article class="project-card" data-category="ai-web" id="project-portfolio">
+          <article class="project-card" [class.hidden]="activeFilter !== 'all' && activeFilter !== 'ai-web'" id="project-portfolio">
             <div class="project-preview-pane">
               <div class="preview-header">
                 <div class="window-controls">
@@ -807,7 +774,7 @@
                     </svg>
                     <span>View GitHub Repo ↗</span>
                   </a>
-                  <button class="btn btn-outline btn-sm view-details-btn" data-project="portfolio">
+                  <button class="btn btn-outline btn-sm view-details-btn" (click)="openProjectModal('portfolio')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <circle cx="11" cy="11" r="8"></circle>
                       <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -822,7 +789,7 @@
           </article>
 
           <!-- PROJECT 2: AI Story Enhancer -->
-          <article class="project-card" data-category="ai-web" id="project-story-enhancer">
+          <article class="project-card" [class.hidden]="activeFilter !== 'all' && activeFilter !== 'ai-web'" id="project-story-enhancer">
             <div class="project-preview-pane">
               <div class="preview-header">
                 <div class="window-controls">
@@ -898,7 +865,7 @@
                     </svg>
                     <span>Live Demo</span>
                   </a>
-                  <button class="btn btn-outline btn-sm view-details-btn" data-project="story-enhancer">
+                  <button class="btn btn-outline btn-sm view-details-btn" (click)="openProjectModal('story-enhancer')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <circle cx="11" cy="11" r="8"></circle>
                       <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -913,7 +880,7 @@
           </article>
 
           <!-- PROJECT 2: Songify -->
-          <article class="project-card" data-category="mobile" id="project-songify">
+          <article class="project-card" [class.hidden]="activeFilter !== 'all' && activeFilter !== 'mobile'" id="project-songify">
             <div class="project-preview-pane mobile-preview-pane">
               <div class="preview-header">
                 <div class="window-controls">
@@ -979,7 +946,7 @@
               </div>
 
               <div class="project-footer-links">
-                <button class="btn btn-outline btn-sm view-details-btn" data-project="songify">
+                <button class="btn btn-outline btn-sm view-details-btn" (click)="openProjectModal('songify')">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -993,7 +960,7 @@
           </article>
 
           <!-- PROJECT 3: Savrajya -->
-          <article class="project-card" data-category="fullstack" id="project-savrajya">
+          <article class="project-card" [class.hidden]="activeFilter !== 'all' && activeFilter !== 'fullstack'" id="project-savrajya">
             <div class="project-preview-pane">
               <div class="preview-header">
                 <div class="window-controls">
@@ -1056,7 +1023,7 @@
               </div>
 
               <div class="project-footer-links">
-                <button class="btn btn-outline btn-sm view-details-btn" data-project="savrajya">
+                <button class="btn btn-outline btn-sm view-details-btn" (click)="openProjectModal('savrajya')">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -1070,7 +1037,7 @@
           </article>
 
           <!-- PROJECT 4: Chhanv Well-Fare -->
-          <article class="project-card" data-category="fullstack" id="project-chhanv">
+          <article class="project-card" [class.hidden]="activeFilter !== 'all' && activeFilter !== 'fullstack'" id="project-chhanv">
             <div class="project-preview-pane">
               <div class="preview-header">
                 <div class="window-controls">
@@ -1144,7 +1111,7 @@
                     </svg>
                     <span>Live Demo</span>
                   </a>
-                  <button class="btn btn-outline btn-sm view-details-btn" data-project="chhanv">
+                  <button class="btn btn-outline btn-sm view-details-btn" (click)="openProjectModal('chhanv')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <circle cx="11" cy="11" r="8"></circle>
                       <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -1335,8 +1302,8 @@
                 </svg>
               </div>
               <span class="channel-label">Email Address</span>
-              <a href="mailto:sshreya3095@gmail.com" class="channel-link">sshreya3095@gmail.com</a>
-              <button class="btn btn-ghost btn-sm channel-btn" id="copy-email-contact" data-email="sshreya3095@gmail.com">
+              <a href="mailto:sshreya3095&#64;gmail.com" class="channel-link">sshreya3095&#64;gmail.com</a>
+              <button class="btn btn-ghost btn-sm channel-btn" id="copy-email-contact" (click)="copyEmail('sshreya3095&#64;gmail.com')">
                 Copy Email
               </button>
             </div>
@@ -1390,26 +1357,26 @@
           <!-- Professional Message Direct Form -->
           <div class="contact-form-wrapper">
             <h3 class="form-title">Send a Direct Message</h3>
-            <form id="contact-form" class="contact-form">
+            <form id="contact-form" class="contact-form" (submit)="handleContactSubmit($event, nameInput, emailInput, subjectInput, messageInput)">
               <div class="form-row">
                 <div class="form-group">
                   <label for="contact-name">Your Name</label>
-                  <input type="text" id="contact-name" name="name" placeholder="e.g. Jane Doe" required>
+                  <input #nameInput type="text" id="contact-name" name="name" placeholder="e.g. Jane Doe" required>
                 </div>
                 <div class="form-group">
                   <label for="contact-sender-email">Your Work Email</label>
-                  <input type="email" id="contact-sender-email" name="email" placeholder="e.g. jane@company.com" required>
+                  <input #emailInput type="email" id="contact-sender-email" name="email" placeholder="e.g. jane&#64;company.com" required>
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="contact-subject">Subject</label>
-                <input type="text" id="contact-subject" name="subject" placeholder="Opportunity / Project Collaboration / Inquiry" required>
+                <input #subjectInput type="text" id="contact-subject" name="subject" placeholder="Opportunity / Project Collaboration / Inquiry" required>
               </div>
 
               <div class="form-group">
                 <label for="contact-message">Message</label>
-                <textarea id="contact-message" name="message" rows="4" placeholder="Hello Shreya, I came across your portfolio and would like to connect regarding..." required></textarea>
+                <textarea #messageInput id="contact-message" name="message" rows="4" placeholder="Hello Shreya, I came across your portfolio and would like to connect regarding..." required></textarea>
               </div>
 
               <div class="form-footer">
@@ -1470,21 +1437,67 @@
   </footer>
 
   <!-- TECHNICAL PROJECT DEEP-DIVE MODAL -->
-  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="modal-card">
-      <button class="modal-close-btn" id="modal-close" aria-label="Close project modal">&times;</button>
+  <div class="modal-overlay" [class.active]="selectedProject !== null" (click)="closeModal()" id="project-modal" [attr.aria-hidden]="selectedProject === null" role="dialog" aria-modal="true">
+    <div class="modal-card" (click)="$event.stopPropagation()">
+      <button class="modal-close-btn" (click)="closeModal()" id="modal-close" aria-label="Close project modal">&times;</button>
       <div class="modal-body" id="modal-content">
-        <!-- Injected via JavaScript -->
+        @if (selectedProject) {
+          <div class="modal-header-section">
+            <span class="modal-project-meta">{{ selectedProject.category }} · {{ selectedProject.timeline }}</span>
+            <h3 class="modal-project-title">{{ selectedProject.title }}</h3>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;">
+              @if (selectedProject.liveUrl) {
+                <a [href]="selectedProject.liveUrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon-svg">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Launch Live Application ↗</span>
+                </a>
+              }
+              @if (selectedProject.repoUrl) {
+                <a [href]="selectedProject.repoUrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="btn-icon-svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>View on GitHub ↗</span>
+                </a>
+              }
+            </div>
+          </div>
+
+          <div class="modal-block">
+            <h4 class="modal-block-title">Project Overview</h4>
+            <p>{{ selectedProject.summary }}</p>
+          </div>
+
+          <div class="modal-block">
+            <h4 class="modal-block-title">Engineering Highlights</h4>
+            <ul class="resume-bullet-list">
+              @for (item of selectedProject.engineeringDetails; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </div>
+
+          <div class="modal-block">
+            <h4 class="modal-block-title">Technologies Used</h4>
+            <div class="modal-tech-list">
+              @for (tech of selectedProject.techStack; track tech) {
+                <span class="tech-tag">{{ tech }}</span>
+              }
+            </div>
+          </div>
+        }
       </div>
     </div>
   </div>
 
   <!-- TOAST NOTIFICATION CONTAINER -->
-  <div class="toast" id="toast" role="alert" aria-live="polite">
+  <div class="toast" [class.show]="toastVisible" id="toast" role="alert" aria-live="polite">
     <span class="toast-icon">✓</span>
-    <span class="toast-message" id="toast-message">Copied to clipboard!</span>
+    <span class="toast-message" id="toast-message">{{ toastMessage }}</span>
   </div>
 
-  <script src="app.js"></script>
-</body>
-</html>
+  

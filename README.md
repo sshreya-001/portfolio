@@ -1,17 +1,32 @@
-# Shreya Singh — Personal Portfolio
+# Shreya Singh — Personal Portfolio (Angular)
 
-Professional, recruiter-focused portfolio website for Shreya Singh, Software Engineer at Ascendion.
+High-performance, recruiter-focused personal developer portfolio built with **Angular 18**, **TypeScript**, and a custom token-based design system.
 
 ## Tech Stack
-- Semantic HTML5
-- Modern Vanilla CSS (Custom Design System, Tokens, Dark/Light Themes)
-- Vanilla JavaScript (Zero external runtime dependencies)
+- **Framework:** Angular 18 (Standalone Components, Signals, Reactive State)
+- **Language:** TypeScript
+- **Styling:** Custom CSS Design System with Native Design Tokens (Dark / Light Themes)
+- **Deployment:** Vercel CI/CD
+
+## Getting Started Locally
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+# or
+npm start
+```
+
+Navigate to `http://localhost:4200/`.
 
 ## Features
-- **Recruiter Quick-Scan HUD (10s Overview)**
-- **Interactive Experience & Project Showcase**
-- **Verified Credentials & Resume Download**
-- **Accessible, Responsive & Themeable (Dark / Light)**
-
-## Deployment
-Deployed on [Vercel](https://vercel.com).
+- **Recruiter Quick-Scan HUD (10-second overview)**
+- **Dynamic Dark/Light Theme Engine**
+- **Category-Based Interactive Project Filtering**
+- **Deep-Dive Technical Preview Modals**
+- **One-Click Verified Resume Download**
+- **Cross-Platform Responsive (iOS, Android, Windows)**
+- **Accessible & SEO-Optimized**

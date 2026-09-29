@@ -1,5 +1,13 @@
+# Dependencies
+node_modules/
+
+# Angular Build & Cache
+dist/
+.angular/
+
+# System and IDE
 .DS_Store
 Thumbs.db
-node_modules/
 .vscode/
 .idea/
+*.log
