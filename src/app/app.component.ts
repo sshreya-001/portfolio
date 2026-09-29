@@ -41,12 +41,12 @@ export class AppComponent implements OnInit {
       categoryFilter: 'ai-web',
       repoUrl: 'https://github.com/sshreya-001/portfolio',
       previewUrlLabel: 'github.com/sshreya-001/portfolio',
-      techStack: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Design Tokens', 'Git', 'Vercel'],
-      summary: 'A high-performance personal developer portfolio built with a custom design system, dynamic theme toggling, recruiter-focused scanning tools, and zero runtime dependencies.',
+      techStack: ['Angular 18', 'TypeScript', 'HTML5', 'CSS3', 'Git', 'Vercel'],
+      summary: 'A responsive single-page developer portfolio engineered with Angular 18, TypeScript, custom token-based theming, reactive state, and automated Vercel deployment.',
       engineeringDetails: [
-        'Built and deployed a responsive developer portfolio with a custom token-based design system, dark/light theme switching, interactive project filtering, and accessible keyboard navigation using vanilla JavaScript.',
-        'Implemented recruiter-focused project previews and optimized SEO, asset loading, cross-browser performance, and automated CI/CD deployment through GitHub and Vercel.',
-        'Architected a zero-framework, lightweight vanilla stack delivering instant page loads, smooth micro-interactions, and 100% responsive viewport scaling.'
+        'Architected and deployed a responsive single-page portfolio using Angular 18 standalone components and TypeScript, featuring a custom CSS design-token system, dynamic dark/light theming, and accessible keyboard navigation.',
+        'Implemented reactive project filtering and recruiter-focused technical modals while optimizing bundle size (~64 kB), responsive rendering across devices, asset loading, and automated CI/CD deployment through GitHub and Vercel.',
+        'Engineered lightweight reactive state management with zero external UI libraries, delivering sub-2s hot reload and instant cross-platform performance.'
       ]
     },
     {
